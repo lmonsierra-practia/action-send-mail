@@ -45,6 +45,9 @@ inputs:
   attachments:
     description: Files that will be added to mail message attachments (separated with comma)
     required: false
+  ignore_cert:
+    description: Boolean value
+    required: false
 runs:
   using: node12
   main: main.js
