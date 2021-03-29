@@ -56,7 +56,7 @@ async function main() {
             },
             tls: {
                 // fail on invalid certs by default
-                rejectUnauthorized: false
+                rejectUnauthorized: true
             }
         })
 
