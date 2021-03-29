@@ -56,13 +56,14 @@ async function main() {
             },
             tls: {
                 // fail on invalid certs by default
-                rejectUnauthorized: true
+                rejectUnauthorized: false
             }
         })
-
+        /*
         if (ignoreCert) {
             transport.tls.rejectUnauthorized = false
         }
+        */
 
         const info = await transport.sendMail({
             from: getFrom(from, username),
